@@ -210,3 +210,27 @@ body::before {
     background: linear-gradient(90deg, #1d5f8a, #3aa0c9, #7bd3ff);
     z-index: 9999;
 }
+
+
+/* LINK PARA O RELATÓRIO DA PESQUISA */
+.research-attachment {
+    padding: 0 15px 25px;
+}
+
+.research-attachment a {
+    display: inline-block;
+    padding: 12px 16px;
+    border: 1px solid #1d5f8a;
+    border-radius: 8px;
+    color: #1d5f8a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.research-attachment a:hover {
+    background: #1d5f8a;
+    color: white;
+    transform: translateY(-2px);
+}
+

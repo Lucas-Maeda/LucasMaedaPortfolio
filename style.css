@@ -239,7 +239,7 @@ body::before {
 
 
 
-/* ESTILOS DA GALERIA INTERNA DO CARTÃO CTIM */
+/* GALERIA INTERNA DO CARTÃO CTIM - OTIMIZADA */
 .card-gallery-section {
     margin-top: 30px;
     padding-top: 20px;
@@ -259,16 +259,18 @@ body::before {
     margin-bottom: 15px;
 }
 
+/* Força rigorosamente 2 colunas e gap de 4 pixels */
 .card-gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Força exatamente 2 colunas */
-    gap: 4px; /* Espaçamento mínimo entre as fotos (cerca de 2 a 4 pixels) */
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4px !important;
+    width: 100%;
 }
 
+/* Maximiza as imagens preenchendo o espaço sem margens brancas */
 .card-gallery-grid img {
-    width: 100%;
-    height: 180px; /* Altura padronizada para ficarem uniformes */
-    object-fit: contain; /* Mostra a foto inteira sem cortes */
-    background-color: #f8f9fa; /* Fundo leve para preencher proporções diferentes */
+    width: 100% !important;
+    height: 220px !important; /* Altura ideal para preencher o espaço do card */
+    object-fit: cover !important; /* Faz a foto ocupar o espaço todo, eliminando as faixas brancas */
     border-radius: 4px;
 }
